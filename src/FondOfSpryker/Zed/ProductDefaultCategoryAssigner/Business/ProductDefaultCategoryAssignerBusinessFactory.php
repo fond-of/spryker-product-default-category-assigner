@@ -13,6 +13,9 @@ use Spryker\Zed\Kernel\Business\AbstractBusinessFactory;
  */
 class ProductDefaultCategoryAssignerBusinessFactory extends AbstractBusinessFactory
 {
+    /**
+     * @return \FondOfSpryker\Zed\ProductDefaultCategoryAssigner\Business\Model\DefaultCategoryAssignerInterface
+     */
     public function createDefaultCategoryAssigner(): DefaultCategoryAssignerInterface
     {
         return new DefaultCategoryAssigner(
@@ -21,6 +24,9 @@ class ProductDefaultCategoryAssignerBusinessFactory extends AbstractBusinessFact
         );
     }
 
+    /**
+     * @return \FondOfSpryker\Zed\ProductDefaultCategoryAssigner\Dependency\Facade\ProductDefaultCategoryAssignerToProductCategoryFacadeInterface
+     */
     protected function getProductCategoryFacade(): ProductDefaultCategoryAssignerToProductCategoryFacadeInterface
     {
         return $this->getProvidedDependency(ProductDefaultCategoryAssignerDependencyProvider::FACADE_PRODUCT_CATEGORY);

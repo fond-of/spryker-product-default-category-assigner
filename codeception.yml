@@ -23,10 +23,6 @@ coverage:
 modules:
   enabled:
     - \FondOfCodeception\Module\Spryker
-
-modules:
-  enabled:
-    - \FondOfCodeception\Module\Spryker
   config:
     \FondOfCodeception\Module\Spryker:
       generate_transfer: false
